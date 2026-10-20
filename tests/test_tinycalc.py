@@ -15,3 +15,7 @@ def test_multiply() -> None:
 
 def test_divide() -> None:
     assert tinycalc.divide(6, 3) == 2
+
+
+def test_divide_by_zero_returns_none() -> None:
+    assert tinycalc.divide(1, 0) is None

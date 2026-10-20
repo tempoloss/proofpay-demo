@@ -18,6 +18,8 @@ def multiply(a: float, b: float) -> float:
     return a * b
 
 
-def divide(a: float, b: float) -> float:
-    """Return the quotient of a and b."""
+def divide(a: float, b: float) -> float | None:
+    """Return the quotient of a and b, or None when b is zero."""
+    if b == 0:
+        return None
     return a / b
