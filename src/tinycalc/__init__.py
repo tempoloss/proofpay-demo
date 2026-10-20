@@ -1,6 +1,6 @@
 """Tiny calculator library."""
 
-__all__ = ["add", "subtract", "multiply", "divide"]
+__all__ = ["add", "subtract", "multiply", "divide", "percent"]
 
 
 def add(a: float, b: float) -> float:
@@ -21,3 +21,8 @@ def multiply(a: float, b: float) -> float:
 def divide(a: float, b: float) -> float:
     """Return the quotient of a and b."""
     return a / b
+
+
+def percent(part: float, whole: float) -> float:
+    """Return part as a percentage of whole."""
+    return part / whole * 100
